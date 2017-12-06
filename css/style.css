@@ -1,0 +1,110 @@
+
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+.wrap {
+	background-image: url("http://vesnasolovic.weebly.com/uploads/2/5/1/0/25109947/6436511_orig.png");
+	/*background-repeat: no-repeat;*/
+	/*background-position: center;*/
+	background-color: #eee;
+	padding-bottom: 20px;
+	/*height: 800px;   ne znam kako visinu da odredim */
+	min-height: 100vh;
+	/*  ovako!!!  vh = VIEWPORT HEIGHT
+	 ili min-height: 100%; a to je onda procenat od roditelja - body, koji takodje onda mora da se setuje na 100%, a zatim i njegov roditelj html, sto nije toliko zgodno kao 100vh   */
+}
+
+.header {
+	background: rgba(210, 210, 210, 0.3);
+	width: 95%;
+	height: 100px;
+    margin: 0 auto;
+    overflow: hidden;
+    /*text-align: center; zasto pomera i sliku u sredinu???*/
+    border: 1px solid rgba(180, 180, 180, 0.7);
+    /*border-bottom: none;*/
+    margin-bottom: 10px;
+}
+
+.znak {
+	float: left;
+	
+}
+
+/*.logo {
+	padding: 10px;
+	padding-left: 50px;
+	margin-left: 30px;
+
+}*/
+ /*ne razumem, nesto nije u redu */
+
+.content {
+	width: 93%;
+	margin: 0 auto;
+	background: rgba(210, 210, 210, 0.5);
+	border: 1px solid rgba(180, 180, 180, 0.7);
+	/*overflow: hidden;*/
+	display: flex;
+	margin-bottom: 10px;
+	padding: 10px 0;
+}
+
+.sidebar {
+	width: 25%;
+	flex: 1;
+	/*float: left;*/
+	background: rgba(210, 210, 210, 0.3);
+	margin: 2%;
+	margin-right: 0;
+
+}
+
+li {
+	border: 1px solid #555;
+}
+
+.main {
+	width: 65%;
+	flex: 3;
+	/*float: right;*/
+	margin: 2%;
+	padding: 20px;
+    background: rgba(210, 210, 210, 0.3);
+    text-align: left;
+    color: #efefef;
+    text-shadow: 1px 1px 2px #282828;
+}
+
+h1 {
+	text-transform: uppercase;
+}
+
+.events {
+	border: 1px solid rgba(180, 180, 180, 0.7);
+	background: rgba(210, 210, 210, 0.3);
+	padding: 10px;
+	margin: 0 auto;
+	width: 93%;
+	margin-bottom: 10px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.evnt1, .evnt2 {
+    flex
+}
+
+.footer {
+	width: 95%;
+	margin: 0 auto;
+	padding: 10px;
+	/*display: flex;*/
+	height: 100px;
+	border: 1px solid rgba(180, 180, 180, 0.7);
+}
